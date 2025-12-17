@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="https://rawcdn.githack.com/Jokarcana/Tanuki-Sunset/a5b13b1279016c9bd123f06a4886b5987fa06dc5/TemplateData/style.css">
+<script src="https://rawcdn.githack.com/Jokarcana/Tanuki-Sunset/a5b13b1279016c9bd123f06a4886b5987fa06dc5/TemplateData/UnityProgress.js"></script>
+<script src="https://rawcdn.githack.com/Jokarcana/Tanuki-Sunset/a5b13b1279016c9bd123f06a4886b5987fa06dc5/Build/UnityLoader.js"></script>
+<script>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "https://rawcdn.githack.com/Jokarcana/Tanuki-Sunset/a5b13b1279016c9bd123f06a4886b5987fa06dc5/Build/WebGL.json", {
+        onProgress: UnityProgress,
+        Module: {
+            onRuntimeInitialized: function () {
+                UnityProgress(gameInstance, "complete")
+            }
+        }
+    });
+</script>
+<script src=""></script>
+<div class="webgl-content">
+    <div id="gameContainer" style="width: 100vw; height: 100vh"></div>
+</div><div style="position:fixed;bottom:10px;right:10px;z-index:9999;"><a href="https://noahs-calculus-tutor.pages.dev" target="_blank" style="color:white;text-decoration:none;display:flex;align-items:center;gap:8px;font-size:12px;background:rgba(0,0,0,0.8);padding:8px 12px;border-radius:6px;font-family:Arial,sans-serif;"><span>Downloaded from Noah's Tutoring Hub</span><img src="https://cdn.jsdelivr.net/gh/NoahsAmazingTutoringHelp/reimagined-octo-winner@main/pictures/5.png" style="height:18px;width:auto;"></a></div>
