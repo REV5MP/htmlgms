@@ -1,0 +1,30 @@
+<html lang="en-us">
+
+<head>
+  <base href="https://cdn.jsdelivr.net/gh/bubbls/UGS-Assets@main/spelunky/">
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="viewport-fit=cover, width=device-width,
+            initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+  <title>Spelunky Classic HD</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="setup.js" defer></script>
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+  <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex="-1">
+  </canvas>
+  <div class="loading">
+    <div class="spinner" id="spinner"></div>
+  </div>
+  <script async type="text/javascript" src="runner.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("serviceWorker.js");
+    }
+  </script>
+<div style="position:fixed;bottom:10px;right:10px;z-index:9999;"><a href="https://noahs-calculus-tutor.pages.dev" target="_blank" style="color:white;text-decoration:none;display:flex;align-items:center;gap:8px;font-size:12px;background:rgba(0,0,0,0.8);padding:8px 12px;border-radius:6px;font-family:Arial,sans-serif;"><span>Downloaded from Noah's Tutoring Hub</span><img src="https://cdn.jsdelivr.net/gh/NoahsAmazingTutoringHelp/reimagined-octo-winner@main/pictures/5.png" style="height:18px;width:auto;"></a></div></body>
+
+</html>
